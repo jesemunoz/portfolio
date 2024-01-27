@@ -1,0 +1,628 @@
+@charset "UTF-8";
+/* Estilos generales */
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; 
+}
+
+/* Variables de colores a usar para el portafolio */
+:root{
+  /*Color del h1, subtitulos, textos en general y del botón uno*/
+  --colorUno:#212529;
+  /*color del logo (simbolo de la rueda y nombre), titulo de secciones y logo portafolio del footer */
+  --colorDos: #a8a8a8;
+  /*color de hover del logo, menú del navbar, y logo Portafolio del footer*/
+  --colorTres: #f8f9fa;
+  /*color de texto de la presentación*/
+  --colorCuatro: #3c4146;
+  /*Colores de sombras*/
+  --colorSombra: #ccc;
+  /*Color de botón uno*/
+  --btnUno: #212529;
+  /*Color de botón dos*/
+  /* --BotonDos: #dc3545; */
+  --btnDos: #00538c;
+  /*hover botón Dos*/
+  /* --HoverBotonDos: #e60e23; */
+  --btnDosHover: #00395f;
+  /*Color para los background del header, titulos y footer*/
+  --colorContenedor: black;
+  /* Variables de fuentes de letras */
+  --fuenteUno: "Nunito", sans-serif; 
+}
+
+/*para que todas las letras en general tengan por defecto fuente 'Opens Sans'*/
+body {
+  font-family: 'Open Sans', sans-serif; 
+}
+
+/* clases para el header */
+#nav {
+  background-color: var(--colorContenedor);
+  min-height: 15vh; 
+}
+
+#menu {
+  transition: all 300ms;
+  color: var(--colorDos); 
+}
+
+#menu:hover {
+  transform: scale(1.15, 1.15);
+  text-decoration: underline;
+  color: #f8f9fa; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 3vw;
+  color: var(--colorDos);
+  padding-left: 1vw;
+  padding-right: 2vw; }
+
+.logo:hover {
+  color: #f8f9fa;
+  overflow: hidden; 
+}
+
+.gear {
+  font-family: var(--fuenteDos);
+  margin: 0 1vw 0 0;
+  height: 10vh; }
+
+/* animaciones */
+/*animación para hacer caer un elemento y que genere el efecto de desaparecer*/
+.logo:hover .gear {
+  animation: cae 500ms linear; 
+}
+
+@keyframes cae {
+  0% {
+    transform: translateY(0%); 
+  }
+  50% {
+    transform: translateY(200%); 
+  }
+  100% {
+    transform: translateY(0%); 
+  } 
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--colorDos);
+  font-family: var(--fuenteUno), sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 3.5vh; 
+}
+
+.logo:hover a {
+  animation: fromRight 300ms linear;
+  color: #f8f9fa; 
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(200%); 
+  }
+  to {
+    transform: translateX(0%); 
+  } 
+}
+
+.desplazamiento {
+  animation-name: desplazamiento;
+  animation-duration: 800ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; 
+}
+
+@keyframes desplazamiento {
+  0% {
+    margin-left: 30vw;
+    transform: rotate(360deg); 
+  }
+  25% {
+    margin-left: 24vw;
+    transform: rotate(270deg); 
+  }
+  50% {
+    margin-left: 18vw;
+    transform: rotate(180deg); 
+  }
+  75% {
+    margin-left: 12vw;
+    transform: rotate(90deg); 
+  }
+  100% {
+    margin-left: 0vw;
+    transform: rotate(0deg); 
+  } 
+}
+
+/*Transición para agrandar los items*/
+.trans {
+  transition: all 1s; 
+}
+
+.trans:hover {
+  transform: scale(1.1); 
+}
+
+.cajaIconosPresentacion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 1.5rem; 
+}
+
+.iconoPresentacion {
+  height: 6.5vh;
+  width: auto;
+  background-color: var(--colorUno);
+  border-radius: 50%;
+  padding: 4px;
+  transition: all 300ms; 
+}
+
+.iconoPresentacion:hover {
+  opacity: 0.6; 
+}
+
+.nombreIcono {
+  text-align: center;
+  color: var(--colorUno);
+  font-size: 1.1rem; 
+}
+
+/* fin de animaciones, etiquetas, clases e id para el header*/
+
+/* Sección de presentación */
+.presentacion {
+  color: var(--colorCuatro);
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px; 
+}
+
+.tituloPrincipal {
+  font-family: var(--fuenteUno), sans-serif;
+  font-size: 3.5rem;
+  color: var(--colorUno);
+  margin-top: 3rem; 
+}
+
+.presentacionInfoPrincipal {
+  font-size: 1.5rem;
+  max-width: 65vw; 
+}
+
+.presentacion .foto .nombre {
+  margin-bottom: 8px; 
+}
+
+.presentacionInfo {
+  order: 1; 
+}
+
+.foto {
+  order: 2; 
+}
+
+.imgFotoPerfil {
+  max-width: 23vw; 
+}
+
+.nombre {
+  font-size: 1rem; 
+}
+
+/* animaciones */
+.stretchRight {
+  animation-name: stretchRight;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  transform-origin: 0% 0%; 
+}
+
+@keyframes stretchRight {
+  0% {
+    transform: scaleX(0.3); 
+  }
+  40% {
+    transform: scaleX(1.02); 
+  }
+  60% {
+    transform: scaleX(0.98); 
+  }
+  80% {
+    transform: scaleX(1.01); 
+  }
+  100% {
+    transform: scaleX(0.98); 
+  }
+  80% {
+    transform: scaleX(1.01); 
+  }
+  100% {
+    transform: scaleX(1); 
+  } 
+}
+
+/* Sección sobre mí */
+.titulo {
+  font-style: var(--fuenteUno), sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  background-color: var(--colorContenedor);
+  color: var(--colorDos);
+  padding: 1rem; 
+}
+
+.resumen {
+  font-size: 1.4rem;
+  letter-spacing: 1px; 
+}
+
+.sobreMi {
+  display: flex;
+  flex-direction: column;
+  justify-content: start; 
+}
+
+.subtitulo {
+  margin-top: 0.5rem;
+  color: var(--colorUno); 
+}
+
+.cajaHobbie {
+  display: flex;
+  flex-direction: column; 
+}
+
+.iconoHobbie {
+  height: 8vh;
+  margin: 0.5rem;
+  padding: 4px;
+  width: auto;
+  align-self: flex-start; 
+}
+
+/* Sección de Skills*/
+.cajaSkills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+.iconoSkill {
+  height: 8vh;
+  width: auto;
+  padding: 6px;
+  margin: 1.5rem 2.5rem 0 2.5rem; 
+}
+
+/* Sección de formación y los proyectos */
+/* Van a usar las mismas clases */
+.proyectos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+.proyecto {
+  display: flex;
+  width: 30%;
+  margin: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid var(--colorSombra);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px var(--colorSombra) inset; 
+}
+
+.proyecto-hover:hover {
+  background-color: rgba(199, 198, 198, 0.504);
+  background-blend-mode: darken;
+  transition: all 1s;
+}
+
+.img {
+  /*640 ancho x 426 alto*/
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 10px; 
+}
+
+.info {
+  line-height: 25px;
+  margin: 8px 0px 8px 0px; 
+}
+
+/*clases para la sección de contacto*/
+.cajaFormulario {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px var(--colorSombra);
+  max-width: 50vw; 
+}
+
+.btnColorUno {
+  background-color: var(--colorUno);
+  color: var(--colorTres);
+  font-family: var(--fuenteUno), sans-serif;
+  font-weight: bold;
+  margin: 0px 12px 12px 12px; 
+}
+
+.btnColorUno:hover {
+  background-color: var(--colorContenedor);
+  color: var(--colorTres); 
+}
+
+.btnColorDos {
+  background-color: var(--btnDos);
+  color: var(--colorTres);
+  font-family: var(--fuenteUno), sans-serif;
+  font-weight: bold;
+  margin: 0px 12px 12px 12px; 
+}
+
+.btnColorDos:hover {
+  background-color: var(--btnDosHover);
+  color: var(--colorTres); 
+}
+
+/* #spinner {
+  display: none;
+  justify-content: center; 
+}
+
+.mensajeExitoso {
+  color: var(--colorTres);
+  font-family: var(--fuenteUno), sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: var(--colorUno);
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center; 
+} */
+
+/* clases para el footer */
+#footer {
+  min-height: 30vh;
+  background-color: var(--colorContenedor);
+  text-align: center; 
+}
+
+.logoFooter {
+  text-decoration: none;
+  color: var(--colorDos);
+  font-family: var(--fuenteUno), sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center; 
+}
+
+.logoFooter:hover {
+  color: var(--colorTres);
+  text-shadow: 2px 2px 5px var(--colorDos); 
+}
+
+.footerContacto{
+  color: var(--colorDos);
+}
+
+.footerInfo {
+  color: var(--colorDos);
+  line-height: 1.5rem;
+  margin: 8px 0px 8px 0px; 
+}
+
+#escribeme:hover {
+  color: var(--colorTres)
+}
+
+/* media querys para una mejor adaptación */
+@media (max-width: 1200px) {
+  .presentacion {
+    justify-content: center; 
+  }
+  .tituloPrincipal {
+    font-size: 2.7rem;
+    margin-top: 5rem; 
+  }
+  .presentacionInfoPrincipal {
+    font-size: 1.25rem; 
+  }
+  .proyecto {
+    width: 40%; 
+  }
+  #footer {
+    min-height: 1.8rem; 
+  }
+  .iconoPresentacion {
+    height: 5vh; 
+  } 
+}
+
+@media (max-width: 991.98px) {
+  .tituloPrincipal {
+    font-size: 2.4rem;
+    margin-top: 0rem; 
+  }
+  .presentacionInfoPrincipal {
+    font-size: 1.25rem;
+    max-width: 100vw; 
+  }
+  .imgFotoPerfil {
+    max-width: 23vw;
+    margin-top: 0rem;
+    margin-bottom: 0rem; 
+  }
+  /*Para sacar la transformación de los items del menú*/
+  #menu:hover {
+    transform: none;
+    text-decoration: none; 
+  }
+  .logo {
+    padding-right: 3vw; 
+  }
+  .logo a {
+    font-size: 6vw; 
+  }
+  .logo a p {
+    font-size: 4vh; 
+  }
+  .presentacion {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 0 2rem; 
+  }
+  .nombre {
+    display: none; 
+  }
+  .foto {
+    order: 1; 
+  }
+  .presentacionInfo {
+    order: 2; 
+  }
+  .cajaIconosPresentacion {
+    margin-top: 0.5rem; 
+  }
+  .iconoPresentacion {
+    height: 5vh; 
+  }
+  .resumen {
+    font-size: 1.25rem; 
+  }
+  .proyecto {
+    width: 45%; 
+  }
+  .cajaFormulario {
+    max-width: 75vw; 
+  }
+  .footerInfo {
+    padding-bottom: 0.5rem; 
+  } 
+}
+
+@media (max-width: 768px) {
+  .presentacion {
+    margin: 0rem 1.5rem 0rem 1.5rem; 
+  }
+  .tituloPrincipal {
+    font-size: 2rem; 
+  }
+  .presentacionInfoPrincipal {
+    font-size: 1.25rem; 
+  }
+  .imgFotoPerfil {
+    max-width: 20vw; 
+  }
+  .proyecto {
+    width: 75%; 
+  }
+  .imgFotoPerfil {
+    max-width: 40vw; 
+  }
+  #footer {
+    min-height: 70vh; 
+  } 
+}
+
+@media (max-width: 575.98px) {
+  .tituloPrincipal {
+    font-size: 1.5rem; 
+  }
+  .presentacionInfoPrincipal {
+    font-size: 1rem; 
+  }
+  .imgFotoPerfil {
+    max-width: 40vw; 
+  }
+  .iconoPresentacion {
+    height: 4vh; 
+  }
+  .nombreIcono {
+    font-size: 0.8rem; 
+  }
+  .logo {
+    padding-right: 3.5vw; 
+  }
+  .gear {
+    height: 7vh; 
+  }
+  .logo a p {
+    font-size: 2.75vh; 
+  }
+  .resumen {
+    font-size: 1rem;
+    margin: 0rem 1.5rem 0rem 1.5rem; 
+  }
+  .iconoHobbie {
+    margin: 0rem 1.5rem 0rem 1.5rem; 
+  }
+  .subtitulo {
+    margin: 1rem 1.5rem 1rem 1.5rem; 
+  }
+  .proyecto {
+    width: 85vw;
+    height: auto; 
+  }
+  .cajaFormulario {
+    max-width: 85vw; 
+  }
+  .logoFooter {
+    font-size: 1.7rem; 
+  }
+  .info {
+    line-height: 20px;
+    margin: 10px 0px 10px 0px; 
+  }
+  footer h4 .info {
+    line-height: 30px; 
+  }
+  .desplazamiento {
+    animation-name: desplazamiento;
+    animation-duration: 1200ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; 
+  }
+  @keyframes desplazamiento {
+    0% {
+      /* margin-left: 30vw; */
+      transform: rotate(360deg); 
+    }
+    25% {
+      /* margin-left: 24vw; */
+      transform: rotate(270deg); 
+    }
+    50% {
+      /* margin-left: 18vw; */
+      transform: rotate(180deg); 
+    }
+    75% {
+      /* margin-left: 12vw; */
+      transform: rotate(90deg); 
+    }
+    100% {
+      /* margin-left: 0vw; */
+      transform: rotate(0deg); 
+    } 
+  } 
+}

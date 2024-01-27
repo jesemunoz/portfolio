@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO</title>
+    <meta name="keywords" content="Portfolio, páginas web, sitios web, programación, trabajo freelance, Desarrollo web, Desarrollo Front-end, Desarrollo backend, Bases de datos, HTML, HTML5, CSS, CSS3, Bootstrap, Tailwind, Sass, Git, GitHub, JavaScript, jQuery, TypeScript, React, redux, Node, npm, Express, Firebase, MongoDB, MySQL, PostgreSQL, Docker, Linux, Python, análisis de datos, Ingeniería de datos,">
+    <meta name="description" content="Este es el sitio web de mi portafolio">
+    <!-- Imagen para el título de la pestaña -->
+    <link rel="icon" type="favicon/x-icon" href="./img/pi-mathematical-constant-symbol.svg">
+    <!-- Enlaces a google font: letra "Nunito" -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- Enlace a fuente de Google fonts: "Open Sans"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace a css de bootstrap local-->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <!-- Enlace al CSS del spinner -->
+    <link rel="stylesheet" href="./assets/css/spinner.css">
+    <!-- Enlace a css local -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Acá empieza la cabecera -->
+    <header>
+        <!-- Acá empieza el nav -->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark fs-5 border-bottom">
+            <div class="container-fluid">
+                <div class="column">
+                    <div class="logo">
+                        <!-- <span class="gear rodar">S</span> -->
+                        <img src="img/logo1.png" class="gear" alt="">
+                        <a href="#" id="marcaPersonal">
+                            <p class="m-0">Jese</p>
+                            <p class="m-0">DevOne</p>
+                        </a>
+                        <!-- <span class="justBeNice desplazamiento">#</span> -->
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fs-4 m-1 me-5">
+                        <li class="nav-item">
+                            <a id="menu" class="nav-link m-2" href="#sobre">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="menu" class="nav-link m-2" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="menu" class="nav-link m-2" href="#formacion">Formación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="menu" class="nav-link m-2" href="#trabajos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="menu" class="nav-link m-2 border-start rounded-3 ps-1" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Acá termina el nav-->
+    </header>
+    <!-- Acá termina la cabecera -->
+
+    <!-- Acá empieza el contenido principal -->
+    <main>
+        <!-- Sección de presentación -->
+        <section>
+            <div class="container">
+                <div class="presentacion mb-4">
+                    <!-- Texto de presentación e iconos de redes sociales-->
+                    <div class="presentacionInfo stretchRight">
+                        <h1 class="tituloPrincipal">¡Hola! Me llamo Jese y soy Data Analyst & Backend Developer</h1>
+                        <p class="presentacionInfoPrincipal lead">
+                            Actualmente me desempeño como Data Engineer Freelance.
+                            <br>
+                            Además,  cuento con formación de Full Stack Developer con Java y Python.
+                            Me encuentro reforzando mi stack con proyectos, mientras aprendo otras tecnologías para la ingeniería de datos y el machine learning porque busco seguir creciendo a nivel profesional constantemente.     
+                        </p>
+                        <div class="cajaIconosPresentacion">
+                            <a href="https://www.linkedin.com/in/jese-munoz-desarrollador/" target="_blank" class="m-3 text-decoration-none">
+                                <img src="./img/social/linkedin.svg" alt="Imagen del icono de linkedIn" class="iconoPresentacion">
+                                <p class="nombreIcono lead">LinkedIn</p>
+                            </a>
+                            <a href="https://github.com/jesemunoz/" target="_blank" class="m-3 text-decoration-none">
+                                <img src="./img/social/github.svg" alt="Imagen del icono de GitHub" class="iconoPresentacion">
+                                <p class="nombreIcono lead">GitHub</p>
+                            </a>
+                            <a href="https://www.canva.com/design/DAF6AJCtNzc/abVidmcZF7ad7BOf2qoj9g/view?utm_content=DAF6AJCtNzc&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="m-3 text-decoration-none">
+                                <img src="img/social/download-pdf.png" alt="Imagen del icono de un CV" class="iconoPresentacion">
+                                <p class="nombreIcono lead">Mi CV</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- foto de perfil y presentación destacada debajo-->
+                    <div class="foto text-center mb-2">
+                        <img src="./img/FotoPerfil.png" class="rounded-circle mb-3 imgFotoPerfil" alt="imagen de mi foto de perfil">
+                        <p class="nombre">Jese Muñoz</p>
+                        <p class="nombre">Data Analyst & Backend Dev</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la sección de presentación-->
+
+        <!-- Sección acerca de mí -->
+        <section>
+            <h2 id="sobre" class="titulo fs-1 mt-4">Sobre mí</h2>
+            <div class="container sobreMi">
+                <h3 class="subtitulo">Hobbies:</h3>
+                <div class="cajaHobbie">
+                    <img src="img/hobbies/books.png" class="iconoHobbie" alt="libros">
+                    <p class="resumen">Estudiar porque disfruto aprender y deseo saber como funcionan las cosas. Me gusta leer sobre ciencias exactas: matemática, física, química y sobre crecimiento personal libros que apunten a potenciar las habilidades blandas y la inteligencia emocional.</p>
+                </div>
+                <div class="cajaHobbie">
+                    <img src="img/hobbies/dog.png" class="iconoHobbie" alt="perro">
+                    <p class="resumen">Jugar con mi perra Carmen, que me acompaña siempre que estoy sentando trabajando. Es mi fiel compañera todo el tiempo.</p>
+                </div>
+                <div class="cajaHobbie">
+                    <img src="img/hobbies/movie.png" class="iconoHobbie" alt="película en una TV">
+                    <p class="resumen">Cine, series y películas en casa, partidos de fútbol, carreras de Fórmula 1 y Moto GP.</p>
+                </div>
+                <div class="cajaHobbie">
+                    <img src="img/hobbies/football.png" class="iconoHobbie" alt="pesa de entrenamiento">
+                    <p class="resumen">Jugar Fútbol, Practicar Yoga, Entrenar, sobre todo los entrenamientos de fuerza, pero también me gusta salir a correr, porque me despeja.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la sección acerca de mí -->
+
+        <!-- Sección de skills (habilidades técnicas y blandas)-->
+        <section>
+            <h2 id="skills" class="titulo fs-1 mt-4">Skills</h2>
+            <div class="container">
+                <h3 class="subtitulo">Technical skills:</h3>
+                <div class="cajaSkills mb-5">
+                    <div class="m-2">
+                        <!-- <i class="iconoSkill git fa-brands fa-git-alt"></i> -->
+                        <img src="img/skills/technical-skills/figma.svg" class="iconoSkill" alt="logo de Figma">
+                        <p class="nombreIcono lead">Figma</p>
+                    </div>    
+                    <div class="m-2">
+                        <!-- <i class="iconoSkill git fa-brands fa-git-alt"></i> -->
+                        <img src="img/skills/technical-skills/trello.svg" class="iconoSkill" alt="logo de Trello">
+                        <p class="nombreIcono lead">Trello</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/vscode.svg" class="iconoSkill" alt="logo de Visual Studio Code">
+                        <p class="nombreIcono lead">Visual Studio Code</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/jupyter.svg" class="iconoSkill" alt="logo de Jupyter">
+                        <p class="nombreIcono lead">Jupyter</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/anaconda.svg" class="iconoSkill" alt="logo de Anaconda">
+                        <p class="nombreIcono lead">Anaconda</p>
+                    </div>    
+                    <div class="m-2">
+                        <!-- <i class="iconoSkill git fa-brands fa-git-alt"></i> -->
+                        <img src="img/skills/technical-skills/markdown.svg" class="iconoSkill" alt="logo de Markdown">
+                        <p class="nombreIcono lead">Markdown</p>
+                    </div>    
+                    <div class="m-2">
+                        <!-- <i class="iconoSkill git fa-brands fa-git-alt"></i> -->
+                        <img src="img/skills/technical-skills/git.svg" class="iconoSkill" alt="logo de Git">
+                        <p class="nombreIcono lead">Git</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/github.svg" class="iconoSkill" alt="logo de GitHub">
+                        <p class="nombreIcono lead">GitHub</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/html5-original-wordmark.svg" class="iconoSkill" alt="logo de HTML5">
+                        <p class="nombreIcono lead">HTML5</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/css3.svg" class="iconoSkill" alt="logo de CSS3">
+                        <p class="nombreIcono lead">CSS3</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/bootstrap.png" class="iconoSkill" alt="logo de Bootstrap">
+                        <p class="nombreIcono lead">Bootstrap</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/solidworks.svg" class="iconoSkill" alt="logo de Solidworks">
+                        <p class="nombreIcono lead">Solidworks</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/corel.png" class="iconoSkill" alt="logo de Corel">
+                        <p class="nombreIcono lead">CorelDRAW</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/javascript.svg" class="iconoSkill" alt="logo de JavaScript">
+                        <p class="nombreIcono lead">JavaScript</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/typescript.svg" class="iconoSkill" alt="logo de TypeScript">
+                        <p class="nombreIcono lead">TypeScript</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/react.svg" class="iconoSkill" alt="logo de React">
+                        <p class="nombreIcono lead">React</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/firebase.svg" class="iconoSkill" alt="logo de Firebase">
+                        <p class="nombreIcono lead">Firebase</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/nodejs.svg" class="iconoSkill" alt="logo de Node.js">
+                        <p class="nombreIcono lead">Node.js</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/npm.svg" class="iconoSkill" alt="logo de npm">
+                        <p class="nombreIcono lead">npm</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/express.svg" class="iconoSkill" alt="logo de Express">
+                        <p class="nombreIcono lead">Express</p>
+                    </div>        
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/python.svg" class="iconoSkill" alt="logo de Python">
+                        <p class="nombreIcono lead">Python</p>
+                    </div>        
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/django-plain.svg" class="iconoSkill" alt="logo de Django">
+                        <p class="nombreIcono lead">Django</p>
+                    </div>        
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/flask-original.svg" class="iconoSkill" alt="logo de Flask">
+                        <p class="nombreIcono lead">Flask</p>
+                    </div>        
+                    <!-- <div class="m-2">
+                        <img src="img/skills/technical-skills/fastapi-original.svg" class="iconoSkill" alt="logo de FastAPI">
+                        <p class="nombreIcono lead">FastAPI</p>
+                    </div>         -->
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/numpy-original.svg" class="iconoSkill" alt="logo de Numpy">
+                        <p class="nombreIcono lead">Numpy</p>
+                    </div>        
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/pandas-original.svg" class="iconoSkill" alt="logo de Pandas">
+                        <p class="nombreIcono lead">Pandas</p>
+                    </div>        
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/power-bi.svg" class="iconoSkill" alt="logo de Power BI">
+                        <p class="nombreIcono lead">Power BI</p>
+                    </div>        
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/mongodb.png" class="iconoSkill" alt="logo de MongoDB">
+                        <p class="nombreIcono lead">MongoDB</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/mysql.svg" class="iconoSkill" alt="logo de MySQL">
+                        <p class="nombreIcono lead">MySQL</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/postgresql.svg" class="iconoSkill" alt="logo de PostgreSQL">
+                        <p class="nombreIcono lead">PostgreSQL</p>
+                    </div>    
+                    <div class="m-2">
+                        <img src="img/skills/technical-skills/docker-original.svg" class="iconoSkill" alt="logo de Docker">
+                        <p class="nombreIcono lead">Docker</p>
+                    </div>    
+                    <!-- <div class="m-2">
+                        <img src="img/skills/technical-skills/linux-original.svg" class="iconoSkill" alt="logo de Linux">
+                        <p class="nombreIcono lead">Linux</p>
+                    </div>     -->
+                </div>    
+                <h3 class="subtitulo">Soft skills:</h3>
+                <div class="cajaSkills mb-5">
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/resiliencia.png" class="iconoSkill" alt="resiliencia, mente positiva">
+                        <p class="nombreIcono lead">Resiliencia</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/liderazgo.png" class="iconoSkill" alt="liderazgo">
+                        <p class="nombreIcono lead">Liderazgo</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/sentido.png" class="iconoSkill" alt="sentido común">
+                        <p class="nombreIcono lead m-0">Sentido</p>
+                        <p class="nombreIcono lead m-0">Común</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/pens-critico.png" class="iconoSkill" alt="pensamiento crítico">
+                        <p class="nombreIcono lead m-0">Pensamiento</p>
+                        <p class="nombreIcono lead m-0">Crítico</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/proactividad.png" class="iconoSkill" alt="proactividad">
+                        <p class="nombreIcono lead">Proactividad</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/pens-autonomia.png" class="iconoSkill" alt="autonomía">
+                        <p class="nombreIcono lead">Autonomía</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/lista-de-verificacion.png" class="iconoSkill" alt="compromiso">
+                        <p class="nombreIcono lead">Compromiso</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/responsabilidad.png" class="iconoSkill" alt="responsabilidad">
+                        <p class="nombreIcono lead">Responsabilidad</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/entusiasmo.png" class="iconoSkill" alt="entusiasmo">
+                        <p class="nombreIcono lead">Entusiasmo</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/motivacion.png" class="iconoSkill" alt="motivación">
+                        <p class="nombreIcono lead">Motivación</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/concentracion.png" class="iconoSkill" alt="concentración">
+                        <p class="nombreIcono lead">Concentración</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/comunicacion.png" class="iconoSkill" alt="comunicación">
+                        <p class="nombreIcono lead">Comunicación</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/flexibilidad.png" class="iconoSkill" alt="flexibilidad">
+                        <p class="nombreIcono lead">Flexibilidad</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/gestion-del-tiempo.png" class="iconoSkill" alt="gestión del tiempo">
+                        <p class="nombreIcono lead m-0">Gestión del</p>
+                        <p class="nombreIcono lead m-0">tiempo</p>
+                    </div>
+                    <div class="m-2">
+                        <img src="img/skills/soft-skills/trabajo-equipo.png" class="iconoSkill" alt="trabajo en equipo">
+                        <p class="nombreIcono lead m-0">Trabajo</p>
+                        <p class="nombreIcono lead m-0">en equipo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la sección de skills -->
+
+        <!-- Sección de formación -->
+        <section>
+            <h2 id="formacion" class="titulo fs-1">Formación</h2>
+            <div class="container">
+                <p class="resumen mt-4 mb-4">Esta es mi formación profesional principal. Sin embargo, cuento con otras certificaciones y estudios que acompañan mis conocimientos en tecnología, como cursos en Udemy, Platzi, Alura, entre otros, que siempre me sirven para profundizar y complementar las formaciones.</p>
+                <div class="proyectos">
+                    <!-- Certificación Universidad de Antioquia -->
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://drive.google.com/file/d/1INfuiA08r4ENCEJFCRa6akeRMZ7xjlBG/view?usp=sharing" target="_blank">
+                            <img src="img/education/Uni-Antioquia.png"
+                                alt="imagen del logo Uni-Antioquia, Data Science Inteligencia Artificial" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Data Science Inteligencia Artificial</p>
+                            <p class="fs-4 mt-3 lead">2023 Dic</p>
+                        </div>
+                    </article>
+                    <!-- Programa ONE -->
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://app.aluracursos.com/user/jesemm2804/program/certificate" target="_blank">
+                            <img src="img/education/programa-ONE.png"
+                                alt="imagen del nombre del programa ONE con su slogan" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Programa ONE</p>
+                            <p class="fs-4 mt-3 lead">Mar 2023 - Oct 2023</p>
+                        </div>
+                    </article>
+                    <!-- Python Data Analyst NTT Data Foundation -->
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://drive.google.com/file/d/1Mo0jt8Ee_W3OfzQa2e9fxt8L0cmUY5Av/view?usp=drive_link" target="_blank">
+                            <img src="img/education/portada-ntt-data.jpg"
+                                alt="imagen del logo de NTT Data Foundation" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Python Data Analyst</p>
+                            <p class="fs-4 mt-3 lead">Feb 2023 - Jul 2023</p>
+                        </div>
+                    </article>
+                    <!-- Técnico en Programación -->
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://drive.google.com/file/d/1-FliEuJdfyG7zfWb8BgMI32fzB5FtryX/view?usp=sharing" target="_blank">
+                            <img src="img/education/logo-unab.png"
+                                alt="imagen del certificado de mi carrera de Técnico en Programación" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Técnico en Programación</p>
+                            <p class="fs-4 mt-3 lead">2023</p>
+                        </div>
+                    </article>
+                    <!-- Platzi - Data Science e Inteligencia Artificial -->
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://drive.google.com/file/d/1eapZRGcs1GNTxneCS0b1KPAyCue6GVBE/view?usp=sharing/" target="_blank">
+                            <img src="img/education/Platzi.png"
+                                alt="imagen de Platzi="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Data Science e Inteligencia Artificial</p>
+                            <p class="fs-4 mt-3 lead">2022 - 2023</p>
+                        </div>
+                    </article>
+                    <!-- Especialización en Gerencia UPB -->
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://drive.google.com/file/d/1UhOR79TesDRJrA_X5VwV7XPbO-0VYsq1/view?usp=sharing" target="_blank">
+                            <img src="img/education/upb.PNG"
+                                alt="imagen del logo de la universidad UPB" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Especialista en Gerencia</p>
+                            <p class="fs-4 mt-3 lead">2009</p>
+                        </div>
+                    </article>
+                    <!-- Ingeniería Mecánica UIS -->
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://drive.google.com/file/d/1nKnu4GIH1b6mYVBk4LTjTDbiPcKUAdFO/view?usp=sharing" target="_blank">
+                            <img src="img/education/UIS.png"
+                                alt="imagen del logo de la universidad UIS" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Ingeniería Mecánica</p>
+                            <p class="fs-4 mt-3 lead">2003</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la sección de formación -->
+
+        <!-- Sección sobre los proyectos destacados -->
+        <section>
+            <h2 id="trabajos" class="titulo fs-1">Proyectos</h2>
+            <div class="container">
+                <div class="proyectos" class="mt-4"> 
+                    <!-- Sitio web, creado como desafío y proyecto para el curso de desarrollo web de Coderhouse -->
+                <!--
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://proyecto-coderhouse-smoky.vercel.app/" target="_blank">
+                            <img src="./img/projects/imagen-proyecto-coderhouse.jpg"
+                                alt="imagen de una chica morena con rulos, y con una laptop, sonriendo" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Mi primer sitio web</p>
+                            <p class="fs-4 mt-3 lead">Sitio Web</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="https://proyecto-coderhouse-smoky.vercel.app/" target="_blank">
+                                <button class="btn btn-md btnColorUno bg-gradient">Ver Demo</button>
+                            </a>
+                            <a href="https://github.com/Nahuel-DevOne/proyecto-coderhouse" target="_blank">
+                                <button class="btn btn-md btnColorDos bg-gradient">Ver Código</button>
+                            </a>
+                        </div>
+                    </article>
+                -->
+                    <!-- Sitio web, creado en equipo como trabajo Freelance para un emprendimiento de marketing digital -->
+                <!--
+                    <article id="proyectoCoderhouse" class="proyecto proyecto-hover">
+                        <a href="https://nahuel-devone.github.io/proyecto-web-coder/" target="_blank">
+                            <img src="./img/projects/portada-freelance-marketing.png"
+                                alt="imagen de un grupo de 4 personas trabajando y viendo una laptop Mac" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Proyecto Freelance</p>
+                            <p class="fs-4 mt-3 lead">Sitio Web</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="https://nahuel-devone.github.io/proyecto-web-coder/" target="_blank">
+                                <button class="btn btn-md btnColorUno bg-gradient">Ver Demo</button>
+                            </a>
+                            <a href="https://github.com/Nahuel-DevOne/proyecto-web-coder" target="_blank">
+                                <button class="btn btn-md btnColorDos bg-gradient">Ver Código</button>
+                            </a>
+                        </div>
+                    </article>
+                -->
+                    <!-- Encriptador de texto, proyecto que forma parte de los challenges del programa ONE, de Oracle + Alura LATAM -->
+                    <article class="proyecto proyecto-hover">
+                        <a href="https://jesemunoz.github.io/challenge_encriptador/" target="_blank">
+                            <img src="./img/projects/encriptador-img.jpg" alt="imagen de la aplicación del encriptador"
+                            class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Encriptador</p>
+                            <p class="fs-4 mt-3 lead">JavaScript - Regex</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="https://jesemunoz.github.io/challenge_encriptador/" target="_blank">
+                                <button class="btn btn-md btnColorUno bg-gradient">Ver Demo</button>
+                            </a>
+                            <a href="https://github.com/jesemunoz/challenge_encriptador" target="_blank">
+                                <button class="btn btn-md btnColorDos bg-gradient">Ver Código</button>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Juego del Blackjack, proyecto para practicar JavaScript, usando vite, importaciones de módulos y buenas prácticas -->
+                    <!--
+                        <article class="proyecto proyecto-hover">
+                        <a href="https://game-blackjack-vite.netlify.app/" target="_blank">
+                            <img src="./img/projects/portada-blackjack.png" alt="imagen de la aplicación del juego del Blackjack" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Blackjack</p>
+                            <p class="fs-4 mt-3 lead">JavaScript - Vite</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="https://game-blackjack-vite.netlify.app/" target="_blank">
+                                <button class="btn btn-md btnColorUno bg-gradient">Ver Demo</button>
+                            </a>
+                            <a href="https://github.com/Nahuel-DevOne/blackjack-vite" target="_blank">
+                                <button class="btn btn-md btnColorDos bg-gradient">Ver Código</button>
+                            </a>
+                        </div>
+                    </article>
+                    -->
+                    <!-- CRM de clientes, usando IndexedDB como base de datos -->
+                    <!--<article class="proyecto proyecto-hover">
+                        <a href="https://nahuel-devone.github.io/crm-clientes/" target="_blank">
+                            <img src="./img/projects/portada-crm-clientes.png" alt="imagen de la app del CRM de clientes" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">CRM de clientes</p>
+                            <p class="fs-4 mt-3 lead">JS - IndexedDB</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="https://nahuel-devone.github.io/crm-clientes/" target="_blank">
+                                <button class="btn btn-md btnColorUno bg-gradient">Ver Demo</button>
+                            </a>
+                            <a href="https://github.com/Nahuel-DevOne/crm-clientes" target="_blank">
+                                <button class="btn btn-md btnColorDos bg-gradient">Ver Código</button>
+                            </a>
+                        </div>
+                    </article>
+                    -->
+                    <!-- App de pacientes, desarrollada durante el curso de introducción a JavaScript en el programa ONE -->
+                    <!--<article class="proyecto proyecto-hover">
+                        <a href="https://nahuel-devone.github.io/administrador-de-pacientes/" target="_blank"><img src="img/projects/portada-administrador-pacientes.png" alt="imagen de la app de pacientes" class="img"></a>
+                        <div class="info">
+                            <p class="fs-4 m-0">App de pacientes</p>
+                            <p class="fs-4 mt-3 lead">JavaScript</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="https://nahuel-devone.github.io/administrador-de-pacientes/" target="_blank">
+                                <button class="btn btn-md btnColorUno bg-gradient">Ver Demo</button>
+                            </a>
+                            <a href="https://github.com/Nahuel-DevOne/administrador-de-pacientes" target="_blank">
+                                <button class="btn btn-md btnColorDos bg-gradient">Ver Código</button>
+                            </a>
+                        </div>
+                    </article>
+                    -->
+                    <!-- Ecommerce desarrollado con React, como desafío y proyecto del curso de React de Coderhouse -->
+                    <!--<article class="proyecto proyecto-hover">
+                        <a href="https://determined-goldberg-229a88.netlify.app/" target="_blank">
+                            <img src="./img/projects/portada-ecommerce-react.jpg" alt="imagen de una chica rubia y joven comiendo una barra de chocolate" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Ecommerce React</p>
+                            <p class="fs-4 mt-3 lead">React - Firebase</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="https://determined-goldberg-229a88.netlify.app/" target="_blank">
+                                <button class="btn btn-md btnColorUno bg-gradient">Ver Demo</button>
+                            </a>
+                            <a href="https://github.com/Nahuel-DevOne/ecommerce" target="_blank">
+                                <button class="btn btn-md btnColorDos bg-gradient">Ver Código</button>
+                            </a>
+                        </div>
+                    </article>
+                    -->
+                    <!-- Retos del programa de Python Data Analyst de NTT Data Foundation -->
+                    <!--<article class="proyecto proyecto-hover">
+                        <a href="https://github.com/Nahuel-DevOne/ntt-data-retos" target="_blank">
+                            <img src="./img/projects/banner-python-data-analyst.png" alt="imagen de la portada del PDF, del reto final del bootcamp de Python Data Analyst" class="img">
+                        </a>
+                        <div class="info">
+                            <p class="fs-4 m-0">Python Data Analyst</p>
+                            <p class="fs-4 mt-3 lead">NTT Data Foundation</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="https://drive.google.com/file/d/17rDATZPem4_FNr8wxD7m1oSyf-5vVgFY/view?usp=sharing" target="_blank">
+                                <button class="btn btn-md btnColorUno bg-gradient">Ver Documentación</button>
+                            </a>
+                            <a href="https://github.com/Nahuel-DevOne/ntt-data-retos" target="_blank">
+                                <button class="btn btn-md btnColorDos bg-gradient">Ver Código</button>
+                            </a>
+                        </div>
+                    </article>
+                    -->
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Fin de la sección acerca de los proyectos -->
+
+        <!-- Sección de contacto-->
+        <!-- <h2 id="contact" class="titulo text-center fs-1 mt-5">Contacto</h2>
+        <section class="container">
+            <form name="contacto" id="formulario" class="container cajaFormulario bg-light mt-5 mb-5" method="POST" netlify>
+                <div class="row"> -->
+                    <!-- Nombre -->
+                    <!-- <div class="form-group col-md-6">
+                        <label for="nombre"></label>
+                        <input id="nombre" name="nombre" type="text" class="form-control"
+                            placeholder="Tu nombre o empresa" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
+                    </div> -->
+                    <!-- Email -->
+                    <!-- <div class="form-group col-md-6 mb-3">
+                        <label for="email"></label>
+                        <input id="email" type="email" name="email" class="form-control" placeholder="texto@texto.com" required maxlength="50">
+                    </div>
+                </div> -->
+                <!-- Asunto -->
+                <!-- <div class="form-group col-md-12 mb-3">
+                    <label for="asunto"></label>
+                    <input id="asunto" type="text" name="asunto" class="form-control" placeholder="Asunto" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
+                </div> -->
+                <!-- Mensaje -->
+                <!-- <div class="col-md-12 text-white">
+                    <label for="mensaje" class="form-label m-2 text-body fs-5">Escribe tu mensaje aquí:</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje" rows="5" required maxlength="300" title="Este campo no puede estar vacío, ni tener más de 300 caracteres"></textarea>
+                </div> -->
+                <!-- Botones del formulario -->
+                <!-- <div id="botonesFormulario" class="form-group text-center">
+                    <button id="btnSubmit" type="submit" class="btn btn-lg btnColorUno m-3 bg-gradient" disabled>Enviar</button>
+                    <button id="btnReset" type="reset" class="btn btn-lg btnColorDos m-3 bg-gradient">Borrar</button>
+                </div> -->
+
+                <!-- Spinner de enviando mensaje -->
+                <!-- <div id="spinner" class="visually-hidden justify-content-center mb-3 p-3">
+                    <div class="sk-chase">
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                    </div>
+                </div> -->
+                <!-- Fin de Spinner -->
+            <!-- </form>
+        </section> -->
+        <!-- Fin de la sección de contacto -->
+    </main>
+    <!-- Acá termina el contenido principal -->
+
+    <!-- Acá empieza el pie de página -->
+    <h2 id="contact" class="titulo text-center fs-1 mt-5">Contacto</h2>
+    <footer id="footer" class="border-top container-fluid">
+        <div class="container">
+            <div class="row justify-content-around mt-3 gap-2 p-2">
+                <div class="footerContacto col-10 col-md-5 col-xl-4 col-xxl-3 mb-2">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h4 class="mb-3">Servicios:</h4>
+                        <p>Desarrollo web</p>
+                        <p>Desarrollo Backend</p>
+                        <p>Ingeniería de Datos</p>
+                    </div>
+                </div>
+                <div class="footerContacto col-10 col-md-5 col-xl-4 col-xxl-3 mb-2">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h4 class="mb-3">Contactame:</h4>
+                        <div class="mb-3">
+                            <span><i class="fa-solid fa-phone me-1"></i></span>(+57)3154516869
+                        </div>
+                        <div class="mb-3">
+                            <span><i class="fa-solid fa-envelope me-1"></i></span>jesemm2804@hotmail.com
+                        </div>
+                        <div class="border border-secondary rounded p-2">
+                            <a href="mailTo:jesemm2804@hotmail.com" id="escribeme" class="text-decoration-none footerContacto"><span><i class="fa-solid fa-message me-2"></i></span>Escríbeme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerContacto col-10 col-md-5 col-xl-4 col-xxl-3 mb-2">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h4 class="ms-3">Networking</h4>
+                        <div>
+                            <a href="https://github.com/jesemunoz/" target="_blank" class="m-2"><img src="img/social/github.svg"
+                                alt="Imagen del icono de GitHub" class="iconoPresentacion"></a>
+                            <a href="https://www.linkedin.com/in/jese-munoz-desarrollador/" target="_blank" class="m-2"><img
+                                src="img/social/linkedin.svg" alt="Imagen del icono de linkedIn" class="iconoPresentacion"></a>
+                            <a href="https://linktr.ee/jese.munoz" target="_blank" class="m-2"><img
+                                src="img/social/linktree.svg" alt="Imagen del icono de linktree" class="iconoPresentacion"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid m-0 pb-1 pt-2">
+            <a href="#" class="logoFooter">Portafolio</a>
+            <p class="footerInfo pb-4 m-0">&copy;2023 Desarrollado con ❤️ por Jese-DevOne<p/>
+        </div>
+    </footer>
+    <!-- Acá termina el pie de página -->
+
+    <!-- Enlace a JavaScript de bootstrap local -->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Enlace a JavaScript local -->
+    <!-- <script src="./assets/js/index.js"></script> -->
+</body>
+
+</html>
